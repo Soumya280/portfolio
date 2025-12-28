@@ -1,145 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototype Portfolio</title>
-    <link rel="stylesheet" href="prototype_portfolio.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soumya | Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-    <div class="display">
-        <div class="welcome">
-            <h1>Prototype Portfolio</h1>
-            <a href="#navbar"></a>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- NAVBAR -->
+    <nav
+      class="max-w-6xl mx-auto p-6 flex justify-between sticky top-0 bg-gray-900 items-center"
+    >
+      <h1 class="text-xl font-bold">Soumya Ranjan Patel</h1>
+      <div class="space-x-6 text-gray-400">
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="max-w-6xl mx-auto px-6 py-24">
+      <h2 class="text-4xl font-bold leading-tight">
+        Hi, I'm <span class="text-blue-400">Soumya</span><br />
+        Full-Stack Developer
+      </h2>
+      <p class="text-gray-400 mt-4 max-w-xl">
+        I build clean, scalable web applications using Java, JavaScript, and
+        modern web technologies.
+      </p>
+      <div class="mt-6 flex gap-4">
+        <a
+          href="#projects"
+          class="bg-blue-500 px-6 py-3 rounded-lg font-medium"
+        >
+          View Projects
+        </a>
+        <a
+          href="https://github.com/Soumya280"
+          class="border border-gray-700 px-6 py-3 rounded-lg"
+        >
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold mb-10">Projects</h3>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <h4 class="text-xl font-semibold">WhisperVault</h4>
+          <p class="text-gray-400 mt-2">Journaling platform.</p>
+          <p class="text-sm text-gray-500 mt-3">
+            Java • JSP • Servlets • Hibernate • MySQL • Spring Boot
+          </p>
+          <div class="mt-4 flex gap-4 text-sm">
+            <a href="https://whisper-vault.netlify.app/" class="text-blue-400"
+              >Live</a
+            >
+            <a
+              href="https://github.com/Soumya280/WhisperVault-backend/"
+              class="text-blue-400"
+              >GitHub</a
+            >
+          </div>
         </div>
-        <!-- navbar -->
-        <div class="navbar" id="navbar">
-            <div class="top-left">Soumya</div>
-            <div class="top-mid">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="down-btn">
-                <a href="path/to/your/file" download><div id="down-btn">Download CV</div></a>
-            </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold mb-10">Skills</h3>
+
+      <div class="grid md:grid-cols-3 gap-6 text-gray-300">
+        <div>
+          <h4 class="font-semibold mb-2">Frontend</h4>
+          <p>HTML, CSS, Tailwind, JavaScript, ReactJS</p>
         </div>
+        <div>
+          <h4 class="font-semibold mb-2">Backend</h4>
+          <p>Java, JSP, Servlets, Hibernate, SpringBoot</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Database & Tools</h4>
+          <p>MySQL, Git, Maven</p>
+        </div>
+      </div>
+    </section>
 
-        <main>
-            <section class="home" id="home">
-                <div class="picture">
-                    <div id="picture">
-                        <img src="https://media-hosting.imagekit.io//2d5d42f2bb7d4584/Screenshot_20230612-175631_Nora.png?Expires=1836118656&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=RfmKWQ7QJtvXwnXz5SRwdaFWuMGkdHVdXlM6aYmOqCRNAKTdZXbdyJqsHddIomgA50zpGoHOQJLLKmp~XgY8xJtLWsPnmmIh8JW6PapIzochlHR0R1sPzx4NeNA6bYnB-SXedI-PoTpEigyH1A~S7n0t2~FmTKYhI~~tzwrkaPmCHMHvB0TpmoivHbtcTwhsR1rcDE0k0XiU16eHQrpT9QHNa1Amq7ChbTfWDNFNJFuYkhmOUSIknluv3z0LBUY9PuBc-MCCdhhR8H14NxES67gaH5b4mUSByfgpwqrQLBylhaVizDnHTS9HBkGpKRzUA-4ZvwN3Iy-XwGrAUOdWFg__" alt="picture">
-                    </div>
-                </div>
-                <div class="self">
-                    <h1>Soumya Ranjan Patel</h1><br>
-                    <p>I'm </p>
-                    <br>
-                    <span><p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites.</p></span><br>
-                    <div>
-                        <button id="hire">Hire Me</button>
-                        <div class="down-btn">
-                            <a href="path/to/your/file" download><div id="down-btn">Download CV</div></a>
-                        </div>
-                    </div>
-                    <div class="icons">
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                    </div>
-                </div>
-            </section>
-            <div class="scrolldown">
-                <a href="#about" id="scrolldown">Scroll Down</a>
-            </div>
-            <section class="about" id="about">
-                <h1>About Me</h1>
-                <div class="about_content">
-                    <div class="introduction">
-                        <h2>My introduction</h2>
-                        <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge frameworks and libraries,which allows me to implement interactive features.</p>
-                        <div class="down-btn">
-                            <a href="path/to/your/file" download><div id="down-btn">Download CV</div></a>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill" id="frontend">
-                            <h2>frontend</h2>
-                            <div><span>Html5</span><span>CSS</span><span>JavaScript</span></div>
-                        </div>
-                        <div class="skill" id="backend">
-                            <h2>backend</h2>
-                            <div><span>Java</span></div>
-                        </div>
-                        <div class="skill" id="database">
-                            <h2>database</h2>
-                            <div><span>MySql</span></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="projects" id="projects">
-                <h1>My Works</h1>
-                <div class="project_list">
-                    <div class="project" id="briefcase">
-                        <div class="pic">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-                                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
-                            </svg>
-                        </div>
-                        <h2>completed</h2>
-                        <h3>10+ Finished Projects</h3>
-                    </div>
-                    <div class="project" id="clients">
-                        <div class="pic">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
-                            </svg>
-                        </div>
-                        <h2>clients</h2>
-                        <h3>15+ Happy Clients</h3>
-                    </div>
-                    <div class="project">
-                        <div class="pic">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-patch-check" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-                                <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z"/>
-                            </svg>  
-                        </div>
-                        <h2>experience</h2>
-                        <h3>5+ Years in the field </h3>
-                    </div>
-                </div>
-            </section>
-            <section class="contact" id="contact">
-                <h1>Get in touch</h1>
-                <h3>Do you have something in your mind? contact me here</h3>
-                <div class="contact_box">
-                    <div class="find">
-                        <h2>Find Me</h2>
-                        <h3>Email: soumya@gmail.com</h3>
-                        <h3>Phone: +91 1234567890</h3>
-                    </div>
-                    <div class="mail">
-                        <form action="">
-                            <div class="input">
-                                <input type="text" name="name" placeholder="Name">
-                                <input type="email" name="email" placeholder="Email">
-                            </div>
-                            <textarea name="Message" id="message" placeholder="Message"></textarea>
-                            <button class="button">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold mb-6">Contact</h3>
+      <p class="text-gray-400 mb-6">Reach out to me.</p>
+      <div class="flex gap-6">
+        <a href="mailto:soumyaranjanpatel280@gmail.com" class="text-blue-400"
+          >Email</a
+        >
+        <a
+          href="https://www.linkedin.com/in/soumya-ranjan-patel"
+          class="text-blue-400"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/Soumya280" class="text-blue-400">GitHub</a>
+      </div>
+    </section>
 
-</body>
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 py-10">© 2025 Soumya</footer>
+  </body>
 </html>
